@@ -50,7 +50,7 @@ buttonSave.onclick = () => {
         openCloseForm('close')
         window.location.reload()
     } else {
-        alert('Preencha todos os campos')
+        alert('Fill in all the fields')
     }
 }
 

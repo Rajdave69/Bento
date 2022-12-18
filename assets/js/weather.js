@@ -13,7 +13,7 @@ weather.temperature = {
 	unit: 'celsius',
 }
 
-var tempUnit = CONFIG.weatherUnit
+const tempUnit = CONFIG.weatherUnit
 
 const KELVIN = 273.15
 const key = `${CONFIG.weatherKey}`
@@ -48,7 +48,7 @@ function getWeather(latitude, longitude) {
 		.then(function (data) {
 			let celsius = Math.floor(data.main.temp - KELVIN)
 			weather.name = data.name
-			weather.temperature.value = tempUnit == 'C' ? celsius : (celsius * 9) / 5 + 32
+			weather.temperature.value = tempUnit === 'C' ? celsius : (celsius * 9) / 5 + 32
 			weather.description = data.weather[0].description
 			weather.iconId = data.weather[0].icon
 		})

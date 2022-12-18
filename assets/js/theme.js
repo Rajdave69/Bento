@@ -18,7 +18,7 @@ const enableDark = () => {
 	try {
 		lucide.createIcons()
 	} catch (err) {
-		alert('Um erro inesperado ocorreu enquanto os ícones eram exibidos, talvez o servidor esteja com problemas')
+		alert('An unexpected error occurred while displaying the icons, maybe the server is having problems')
 	}
 	themeEnable = 'Dark'
 	generateAccent()
@@ -32,7 +32,7 @@ const disableDark = () => {
 	try {
 		lucide.createIcons()
 	} catch (err) {
-		alert('Um erro inesperado ocorreu enquanto os ícones eram exibidos, talvez o servidor esteja com problemas')
+		alert('An unexpected error occurred while displaying the icons, maybe the server is having problems')
 	}
 	themeEnable = 'Light'
 	generateAccent()
@@ -105,18 +105,15 @@ function lightenColor(r, g, b) {
 		for (let i = 0; i < arrayRGB.length; i++) {
 			let per100 = 0.3
 			resultFuncStrong
-			const result = Math.floor(porcentagem(arrayRGB[i], per100, '+'))
-			arrayRGB[i] = result
+			arrayRGB[i] = Math.floor(porcentagem(arrayRGB[i], per100, '+'))
 		}
 	} else if (rules.lightTheme) {
 		for (let i = 0; i < arrayRGB.length; i++) {
-			const result = Math.floor(porcentagem(arrayRGB[i], 0.3, '+'))
-			arrayRGB[i] = result
+			arrayRGB[i] = Math.floor(porcentagem(arrayRGB[i], 0.3, '+'))
 		}
 	} else if (rules.darkTheme) {
 		for (let i = 0; i < arrayRGB.length; i++) {
-			const result = Math.floor(porcentagem(arrayRGB[i], -0.3, '+'))
-			arrayRGB[i] = result
+			arrayRGB[i] = Math.floor(porcentagem(arrayRGB[i], -0.3, '+'))
 		}
 	}
 

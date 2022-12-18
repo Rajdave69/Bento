@@ -1,6 +1,6 @@
 function imageUploaded() {
-    var file = document.querySelector('input#uploadImageBackground')['files'][0]
-    var reader = new FileReader()
+    const file = document.querySelector('input#uploadImageBackground')['files'][0];
+    const reader = new FileReader();
     reader.onload = function () {
         base64String = reader.result
         imageBase64Stringsep = base64String
@@ -64,7 +64,7 @@ document.querySelector('button[btn-salvar]').onclick = (e) => {
 window.localStorage.getItem('devOption') === null ?
     window.localStorage.setItem('devOption', JSON.stringify(false)) : ''
 
-let devOption = window.localStorage.getItem('devOption') === 'true' ? true : false
+let devOption = window.localStorage.getItem('devOption') === 'true'
 document.querySelector(`input[name="devOption"][value="${devOption}"]`).checked = true
 
 document.querySelector('input[name="name"]').value = CONFIGSaved.name ? CONFIGSaved.name : 'User'
@@ -79,9 +79,9 @@ const formatData = document.querySelector('button[format-data]')
 const formatButtons = document.querySelector('button[format-buttons]')
 formatData.onclick = () => {
     window.localStorage.removeItem('CONFIG')
-    alertPerson('Dados apagados')
+    alertPerson('Deleted the data')
 }
 formatButtons.onclick = () => {
     window.localStorage.removeItem('buttons')
-    alertPerson('Botões restaurados')
+    alertPerson('Restored Buttons')
 }

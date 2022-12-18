@@ -43,10 +43,10 @@ You can use different Add-ons/Extensions for it
 
 ### 🌄 Background Image
 
-   - No canto superior esquerdo na página do Bento clique no botão com ícone de engrenagem.
-   - Na área das configurações de imagem de fundo clique em Sim e em Carregar Imagem.
-   - No final da página clique no botão de salvar.
-   - Agora é só voltar para a página inicial e lá vai estar a sua imagem.
+   - In the upper left corner of the Bento page click on the gear icon button.
+   - In the background image settings area, click Yes and Load Image.
+   - At the bottom of the page click on the save button.
+   - Now just go back to the home page and there will be your image.
 
 ### 🌑 Auto change theme
 
@@ -69,7 +69,7 @@ The theme can be set from the following ways:The theme can be set from the follo
 ### 👋 General: Name, Weather Icons and Time Format
 
   - 👤 User Name:
-      - You can change your user name at any time in the first text box at the top of the settings page.
+      - You can change your username at any time in the first text box at the top of the settings page.
   - ⛅ Weather Icons:
       - Four styles of weather icons are available for you to choose from, just go to the "Weather icons theme" section and select an option.
   - 🕗 Time format:
